@@ -11,7 +11,6 @@ Note: explain difference between forking and using a template.
 
 * Look at your fork of the repo at https://github.com
 * Select the 'Actions' tab
-* Click the 'New workflow' button
 * Find the right workflow for your language (ask if you're not sure)
 * Click the 'Configure' button
 * You should see an online editor with a default YAML file loaded
