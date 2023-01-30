@@ -76,6 +76,9 @@ defaults:
     
 jobs:
   ...
+  - name: Validate composer.json and composer.lock
+    run: composer validate --no-check-publish
+  ...
   - name: Run test suite
     run: ./vendor/bin/phpunit --testdox tests
 ```
