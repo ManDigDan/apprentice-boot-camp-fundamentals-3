@@ -28,7 +28,18 @@ Note:
 
 --
 
-Java / Kotlin
+Kotlin
+```yaml
+- name: Build with Gradle
+  uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
+  with:
+    arguments: build
+    build-root-directory: exercises/kotlin
+```
+
+--
+
+Java
 ```yaml
 - name: Build with Gradle
   uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
@@ -65,7 +76,27 @@ jobs:
 
 --
 
-Javascript / Typescript
+JavaScript
+```yaml
+defaults:
+  run:
+    working-directory: exercises/javascript
+
+jobs:
+  ...
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: 'exercises/typescript/package-lock.json'
+```
+
+--
+
+TypeScript
 ```yaml
 defaults:
   run:
