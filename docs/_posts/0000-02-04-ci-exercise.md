@@ -11,7 +11,14 @@ Note: explain difference between forking and using a template.
 
 * Look at your fork of the repo at https://github.com
 * Select the 'Actions' tab
-* Find the right workflow for your language (ask if you're not sure)
+* Find the right workflow for your language from the table below
+***
+| JavaScript | TypeScript | Java             | Kotlin           | PHP | C#   |
+|------------|------------|------------------|------------------|-----|------|
+| Node.js    | Node.js    | Java with Gradle | Java with Gradle | PHP | .NET |
+<!-- .element: style="font-size: 70%" -->
+***
+
 * Click the 'Configure' button
 * You should see an online editor with a default YAML file loaded
 
